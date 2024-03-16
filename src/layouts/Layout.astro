@@ -1,0 +1,74 @@
+--- 
+import { ViewTransitions } from 'astro:transitions';
+interface Props {
+	title: string;
+	description: string;
+	canonicalURL:string;
+}
+
+const { title,description,canonicalURL } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description}>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalURL} />
+		<title>{title}</title>
+		<!-- <ViewTransitions/> -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3687639021943715"
+     crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<slot />
+	</body>
+
+	<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+	<script>
+	  /* paste this line in verbatim */
+	  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+	  /* customize formbutton below*/     
+	  formbutton("create", {
+	    action: "https://formspree.io/f/xknlpkkd",
+	    title: "有什么可以帮到您？💕💕💕 How can I help you?",
+	    fields: [
+	      { 
+	        type: "email", 
+	        label: "您的电子邮箱（方便与您联系）:", 
+	        name: "email",
+	        required: true,
+	        placeholder: "your@email.com"
+	      },
+	      {
+	        type: "textarea",
+	        label: "您想提交的反馈和询问信息:",
+	        name: "message",
+	        placeholder: "What's on your mind?",
+	      },
+	      { type: "submit" }      
+	    ],
+	    styles: {
+	      title: {
+	        backgroundColor: "blue"
+	      },
+	      button: {
+	        backgroundColor: "blue"
+	      }
+	    }
+	  });
+	</script>
+
+</html>
+<style is:global>
+	::-webkit-scrollbar {
+        width: 11px;
+   }
+   ::-webkit-scrollbar-thumb{
+        background-color: #3F83F8;
+        border-radius: 3px;
+   }
+</style>

@@ -1,0 +1,35 @@
+/* html{
+    scroll-behavior: smooth;   
+}
+body {
+   max-width: 46rem;
+   padding: 2rem;
+   margin: auto;
+   font-family: 'Source Han Serif', serif;
+   font-family: -apple-system, Helvetica, Tahoma, Arial, Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "微软雅黑", SimHei, "WenQuanYi Micro Hei", sans-serif;
+   font-size: 21px;
+}
+
+img {
+   max-width:100%;
+   max-height:100%;
+   display: block;
+   text-align: center;
+}
+
+h1 {
+ margin-block: 1.2rem;
+ font-size: 79px;
+}
+
+figcaption {
+   text-align: center;
+}
+nav{
+   margin-bottom: 2rem;
+   padding-bottom: 1rem;
+   box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+nav a, footer div a{
+   margin-right: 1rem;
+} */
