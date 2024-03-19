@@ -1,6 +1,6 @@
 # Intro
 
-A simple doc site template project with astro build
+部署到了cloudflare pages，部署的时候直接git push就可以了
 
 > Tips
 >
