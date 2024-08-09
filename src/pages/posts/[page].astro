@@ -1,5 +1,7 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import Search from "astro-pagefind/components/Search";
+
 export async function getStaticPaths({ paginate }) {
 	const blogs = (await Astro.glob('./*.md')).filter(f=> !f.file.endsWith("test.md"))
 					.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
@@ -40,6 +42,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 		<main class="prose lg:prose-xl">
 			<h1><a href="/">架构百科</a> 文章列表</h1>
+
+			<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+
 		<section class="section blog-section" id="blog-section">
 			<div class="container">
 			  <div id="search" class="ml-3 p-4 -mt-8"></div>

@@ -3,7 +3,7 @@ import { ViewTransitions } from "astro:transitions";
 // 1. The frontmatter prop gives access to frontmatter and other data
 const { frontmatter } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
-
+import Search from "astro-pagefind/components/Search";
 ---
 
 <html lang="zh">
@@ -42,7 +42,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         <a href="https://scala.afoo.me">Biased Scala</a>
         <a href="https://honojs.afoo.me">Simple Honojs</a>
       </nav>
-      <main class="prose lg:prose-xl">
+      <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+      <main class="prose lg:prose-xl mt-6">
         <div style="color:gray; font-size: x-small">
           {frontmatter.pubDate.substring(0, 10)}
         </div>
