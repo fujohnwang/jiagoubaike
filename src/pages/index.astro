@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="架构百科" description="架构百科wiki" canonicalURL='https://jiagoubaike.com/'>
-	<main class="container mx-auto p-6 prose lg:prose-xl">
+	<main class="container mx-auto p-6">
     <h1 style="
     font-size:111px;
     background-image: linear-gradient(45deg, #fe3300, #005ff3);
@@ -17,63 +17,84 @@ import Layout from '../layouts/Layout.astro';
     <!-- <h2 class="mx-auto"><a href="/posts/1">进入架构百科的世界</a></h2> -->
     <section>
       <!-- Container -->
-      <div class="mx-auto w-full max-w-5xl px-5">
+      <div class="mx-auto w-full px-5">
         
         <!-- Heading Text -->
         <div class="mx-auto mb-8 w-full max-w-3xl text-center">
           <h2 class="mb-4 text-3xl font-semibold md:text-5xl">
             <a href="/posts/1" class="no-underline">
-              → <span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/639156ce1c70c97aeb755c8a_Rectangle%2010%20(1).svg')] bg-cover bg-center px-4 text-white">开始架构百科之旅</span>
+              → 开始<span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/639156ce1c70c97aeb755c8a_Rectangle%2010%20(1).svg')] bg-cover bg-center p-4 text-white">架构百科</span>之旅
             </a>
           </h2>
         </div>
-        <!-- Content Div -->
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-20">
-          <!-- Features Div -->
-          <div class="flex flex-col items-start">
-            <!-- Features Item -->
-            <a class="my-4 flex w-full items-center rounded-xl border border-solid border-[#4273f6] bg-[#4273f6] p-6 font-bold text-white [box-shadow:rgb(0,_0,_0)_-4px_4px]" href="https://www.youtube.com/@jgbk">
-              <div class="relative w-full flex flex-col items-center justify-center px-4 rounded-xl ">
-                <img alt="" src="/logo.png" class="h-12"/>
-                <p class="text-sm font-normal">架构百科Youtube频道(https://www.youtube.com/@jgbk)</p>
+
+
+        <section class="py-12 md:py-16 overflow-x-clip bg-white">
+          <div class="w-full mx-auto px-6 lg:px-16">
+            <h2 class="text-4xl md:text-5xl font-medium mb-4 text-zinc-900 text-center py-6">🫰有关<span class="bg-[url('https://assets.website-files.com/63904f663019b0d8edf8d57c/639156ce1c70c97aeb755c8a_Rectangle%2010%20(1).svg')] bg-cover bg-center p-4 text-white">架构百科</span>的更多媒体渠道</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="p-4  flex md:flex-col rounded-xl gap-4 hover:bg-cyan-200 items-center text-center hover:cursor-pointer" onclick="window.location.href='https://www.youtube.com/@jgbk';">
+                <div class="w-32 md:w-full aspect-square relative"><img alt="Open-source Advantage" loading="lazy" decoding="async" data-nimg="fill" 
+                  class="object-cover object-center rounded-lg m-auto p-16" 
+                  src="/logo.png"></div>
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-xl leading-none mb-2 font-bold text-zinc-800 whitespace-break-spaces line-clamp-1">架构百科 Youtube 频道</h3>
+                  <a href="https://www.youtube.com/@jgbk">https://www.youtube.com/@jgbk</a>
+                </div>
+              </div>
+              <div class="p-4 flex md:flex-col rounded-xl gap-4 items-center text-center">
+                <div class="w-32 md:w-full aspect-square relative"><img alt="Responsive Design" loading="lazy" decoding="async" data-nimg="fill" class="object-cover object-center rounded-lg" 
+                  src="https://user-images.githubusercontent.com/451506/173383499-e9fcc8de-a5a0-4b5c-87f7-4e925b83a039.png"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="py-12 md:py-16 bg-white">
+          <div class="max-w-screen-xl mx-auto px-6 lg:px-16">
+            <div class="mb-14 text-center">
+              <div class="py-1.5 inline-block px-6 bg-indigo-100 rounded-full text-sm font-medium text-indigo-600 text-center mb-8">Recommendation</div>
+              <h2 class="text-4xl md:text-5xl font-medium text-center text-gray-900 mb-2">更多推荐</h2>
+            </div>
+            <div class="flex justify-center items-start gap-x-5 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
+              <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4" onclick="window.location.href='https://afoo.me/arch.html';">
+                <div class="bg-teal-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-teal-600"><img alt="" src="https://afoo.me/images/logo.png" class="h-12" /></div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">「架构师的修炼」视频课程大礼包</h4>
+                <p class="text-sm font-normal text-gray-500"><a href="https://afoo.me/arch.html" class="border-b">https://afoo.me/arch.html</a></p>
+              </div>
+              <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4" onclick="window.location.href='https://www.youtube.com/@afoo';">
+                <div class="bg-indigo-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-indigo-600"><img alt="" src="https://afoo.me/images/logo.png" class="h-12" /></div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">「福强私学」Youtube 频道</h4>
+                <p class="text-sm font-normal text-gray-500"><a href="https://www.youtube.com/@afoo" class="border-b">https://www.youtube.com/@afoo</a></p>
+              </div>
+              <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4" onclick="window.location.href='https://honojs.afoo.me/';">
+                <div class="bg-pink-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-pink-600"><img alt="" src="https://afoo.me/images/logo.png" class="h-12" /></div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">HonoJS Cookbook (免费试读版)</h4>
+                <p class="text-sm font-normal text-gray-500"><a href="https://honojs.afoo.me/" class="border-b">https://honojs.afoo.me/</a></p>
               </div>
 
-            </a>
-            <!-- Features Item -->
-            <a class="my-4 flex w-full items-center rounded-xl border border-solid border-black p-6 font-bold [box-shadow:rgb(0,_0,_0)_-4px_4px]" href="https://www.youtube.com/@afoo">
-              <div class="relative w-full flex flex-col items-center justify-center px-4 rounded-xl ">
-                <img alt="" src="https://afoo.me/images/logo.png" class="h-12" />
-                <p class="text-sm font-normal">福强的Youtube频道 (https://www.youtube.com/@afoo)</p>
+              <div class="relative w-full text-center max-md:max-w-sm max-md:mx-auto group md:w-2/5 lg:w-1/4" onclick="window.location.href='https://afoo.me';">
+                <div class="bg-orange-50 rounded-lg flex justify-center items-center mb-5 w-20 h-20 mx-auto cursor-pointer transition-all duration-500 group-hover:bg-orange-600"><img alt="" src="https://afoo.me/images/logo.png" class="h-12" /></div>
+                <h4 class="text-lg font-medium text-gray-900 mb-3 capitalize">福强个人博客</h4>
+                <p class="text-sm font-normal text-gray-500"><a href="https://afoo.me" class="border-b">https://afoo.me</a></p>
               </div>
+            </div>
+          </div>
+        </section>
 
-            </a>
-            <!-- Features Item -->
-            <a class="my-4 flex w-full items-center rounded-xl border border-solid border-black p-6 font-bold [box-shadow:rgb(0,_0,_0)_-4px_4px]" href="https://honojs.afoo.me">
-              <div class=" relative w-full flex flex-col items-center justify-center px-4 rounded-xl " >
-                <img alt="" src="https://afoo.me/images/logo.png"  class="h-12"/>
-                <p class=" text-sm font-normal">Simple Honojs (https://honojs.afoo.me)</p>
-              </div>
-            </a>
-          </div>
-          <!-- Image Div -->
-          <div class="relative left-4 h-full lg:w-full">
-            <a href="/posts/1">
-              <img src="https://user-images.githubusercontent.com/451506/173383499-e9fcc8de-a5a0-4b5c-87f7-4e925b83a039.png" alt="" class="relative mx-auto block w-full rounded-2xl object-cover" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     
     <section class="overflow-x-clip bg-zinc-50 py-16 md:py-24">
       <div class="relative mx-auto w-full max-w-screen-xl px-4">
         <div class="relative z-10 w-full">
           <div class="mx-auto max-w-screen-md">
-            <h2 class="mb-4 text-center text-4xl font-bold md:text-5xl">欢迎加入<a href="https://afoo.me/kb.html" class="border-b">「福强私学」</a></h2>
+            <h2 class="mb-4 text-center text-4xl font-bold md:text-5xl">更欢迎加入<a href="https://afoo.me/kb.html" class="border-b">「福强私学」</a></h2>
             <p class="mx-auto mb-8 w-full text-center text-lg leading-8 text-zinc-700 md:w-5/6 md:text-xl">一起探索「技术、商业与人」</p>
           </div>
           <div class="mx-auto mt-6 w-full md:mt-12 md:w-4/5">
+            <a href="https://afoo.me/kb.html">
             <img alt="footer img for kb.afoo.me" loading="lazy" width="2911" height="1961" decoding="async" data-nimg="1" class="mx-auto rounded-lg object-contain shadow-lg sm:rounded-2xl lg:rounded-3xl" style="color:transparent" src="https://og.afoo.me/?url=footer" />
+          </a>
           </div>
         </div>
       </div>
