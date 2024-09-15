@@ -49,8 +49,7 @@ import Search from "astro-pagefind/components/Search";
         </div>
         <slot />
 
-        <section class="py-6 border-t">
-          <div class="relative mx-auto w-full max-w-screen-xl px-4">
+        <section class="relative mx-auto w-full max-w-screen-xl p-6 mt-6 border-t">
             <div class="relative z-10 w-full">
               <div class="mx-auto max-w-screen-md">
                 <h2 class="mb-4 text-center text-4xl font-bold md:text-5xl">向扶墙老师提问</h2>
@@ -63,11 +62,12 @@ import Search from "astro-pagefind/components/Search";
                 </a>
               </div>
             </div>
-          </div>
         </section>
 
         
-        <button onclick="history.back()" class="mx-auto border py-1 px-3 rounded my-6">返回(Go Back)</button>
+        <div class="w-full max-w-screen-xl">
+          <div onclick="history.back()" class="mx-auto my-6 w-1/2 rounded border bg-blue-500 p-3 text-center text-white md:w-1/4">返回(Go Back)</div>
+        </div>
       </main>
 
       <section class="overflow-x-clip bg-zinc-50 py-16 md:py-24">
