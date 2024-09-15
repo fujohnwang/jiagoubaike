@@ -43,7 +43,7 @@ import Search from "astro-pagefind/components/Search";
         <a href="https://honojs.afoo.me">Simple Honojs</a>
       </nav>
       <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
-      <main class="prose lg:prose-xl mt-6">
+      <main class="prose lg:prose-xl mt-6 mx-auto w-full max-w-screen-xl">
         <div style="color:gray; font-size: x-small">
           {frontmatter.pubDate.substring(0, 10)}
         </div>
@@ -67,7 +67,7 @@ import Search from "astro-pagefind/components/Search";
         </section>
 
         
-        <button onclick="history.back()" class="mx-auto w-full max-w-screen-xl border py-1 px-3 rounded my-6">返回(Go Back)</button>
+        <button onclick="history.back()" class="mx-auto border py-1 px-3 rounded my-6">返回(Go Back)</button>
       </main>
 
       <section class="overflow-x-clip bg-zinc-50 py-16 md:py-24">
