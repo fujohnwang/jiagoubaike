@@ -38,7 +38,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 		  <a href="https://store.afoo.me">Fuqiang Store</a>
 		</nav>
 
-		<main class="prose lg:prose-xl">
+		<main class="prose lg:prose-xl mt-6 mx-auto w-full max-w-screen-xl">
 			<h1><a href="/">架构百科</a> 文章列表</h1>
 
 			<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
@@ -96,6 +96,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 
     </main>
+
+	<section class="overflow-x-clip bg-zinc-50 py-16 md:py-24">
+        <div class="relative mx-auto w-full max-w-screen-xl px-4">
+          <div class="relative z-10 w-full">
+            <div class="mx-auto max-w-screen-md">
+              <h2 class="mb-4 text-center text-4xl font-bold md:text-5xl">欢迎加入<a href="https://afoo.me/kb.html" class="border-b">「福强私学」</a></h2>
+              <p class="mx-auto mb-8 w-full text-center text-lg leading-8 text-zinc-700 md:w-5/6 md:text-xl">一起探索「技术、商业与人」</p>
+            </div>
+            <div class="mx-auto mt-6 w-full md:mt-12 md:w-4/5">
+              <img alt="footer img for kb.afoo.me" loading="lazy" width="2911" height="1961" decoding="async" data-nimg="1" class="mx-auto rounded-lg object-contain shadow-lg sm:rounded-2xl lg:rounded-3xl" style="color:transparent" src="https://og.afoo.me/?url=footer" />
+            </div>
+          </div>
+        </div>
+      </section>
+	  
 	<hr class="my-6"/>
 
     <div hx-get="https://toolfooter.afoo.me/" hx-trigger="revealed, load delay:3s"/>
