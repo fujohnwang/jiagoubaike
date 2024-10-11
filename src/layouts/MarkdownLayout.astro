@@ -4,6 +4,8 @@ import { ViewTransitions } from "astro:transitions";
 const { frontmatter } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 import Search from "astro-pagefind/components/Search";
+
+const ogImgUrl = `https://og.afoo.me?url=${canonicalURL}`
 ---
 
 <html lang="zh">
@@ -13,20 +15,19 @@ import Search from "astro-pagefind/components/Search";
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta author={frontmatter.author} />
-    <meta keywords={frontmatter.keywords} />
-    <meta description={frontmatter.description} />
+    <meta name="author" content={frontmatter.author} />
+    <meta name="keywords" content={frontmatter.keywords} />
+    <meta name="description" content={frontmatter.description} />
     <link rel="icon" type="image/svg+xml" href="https://afoo.me/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
-    <meta property="og:title" content="{frontmatter.title}">
-    <meta property="og:description" content="{frontmatter.description}">
-    <meta property="og:url" content="{canonicalURL}">
+    <meta property="og:title" content={frontmatter.title}>
+    <meta property="og:description" content={frontmatter.description}>
+    <meta property="og:url" content={canonicalURL}>
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://afoo.me/logo.png">
+    <meta property="og:image" content={ogImgUrl}>
     <meta property="og:image:alt" content="架构百科 - 王福强的logo">
     <title>{frontmatter.title}</title>
     <script src="/js/htmx.min.js" is:inline></script>
-    <!-- <ViewTransitions /> -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3687639021943715"
      crossorigin="anonymous"></script>
   </head>
