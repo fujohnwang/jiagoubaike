@@ -4,7 +4,12 @@
 	border-inline-start: 0.25rem solid var(--sl-color-asides-border);
 	color: white;
 	font-style: italic;
+	border-left-style: solid;
+	border-left-color: rgb(46, 43, 43);
+	border-left-width: 1rem;
 }
+	
+
 .starlight-aside--note {
 	--sl-color-asides-text-accent: var(--sl-color-blue-high);
 	--sl-color-asides-border: var(--sl-color-blue);
