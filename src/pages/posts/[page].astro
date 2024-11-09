@@ -3,7 +3,7 @@ import { ViewTransitions } from 'astro:transitions';
 import Search from "astro-pagefind/components/Search";
 
 export async function getStaticPaths({ paginate }) {
-	const blogs = (await Astro.glob('./*.md')).filter(f=> !f.file.endsWith("test.md"))
+	const blogs = (await Astro.glob('./*.(md|mdx)')).filter(f=> !f.file.endsWith("test.md"))
 					.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
 	return paginate(blogs, { 
 		pageSize: 11
