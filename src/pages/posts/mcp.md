@@ -61,8 +61,7 @@ AI应用可以两种方式接入MCP服务：
 
 
 
-## Awesome MCP Servers
-
+## [Awesome MCP Servers](https://github.com/modelcontextprotocol/servers)
 
 - [MCP Server Trello](https://github.com/utopica-dev/mcpserver-trello)
 - [Coolify MCP Server](https://github.com/StuMason/coolify-mcp-server)
@@ -158,6 +157,8 @@ AI应用可以两种方式接入MCP服务：
 - [nREPL MCP Server](https://github.com/JohanCodinha/nrepl-mcp-server)
 - [AgentCare](https://github.com/Kartha-AI/agentcare-mcp)
 - [confluence-mcp](https://github.com/zereight/confluence-mcp)
+- [mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)
+- [Brave Search MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search)
 
 
 
