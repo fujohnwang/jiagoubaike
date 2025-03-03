@@ -60,6 +60,11 @@ AI应用可以两种方式接入MCP服务：
 > 至于开发，so easy啦，让cursor这些帮你干就行了，现在早就不用自己动手搞这种初级编码了，不是吗？😉
 
 
+## 更多有关MCP的精彩内容
+
+- [一篇看懂MCP](https://afoo.me/posts/2025-02-26-mcp-explained.html)
+- [为什么只有这种MCP Server火了？](https://afoo.me/posts/2025-02-26-why-tool-mcp-server-rocks.html)
+- [用Scala编写一个MCP Server](https://afoo.me/posts/2025-03-02-build-a-MCP-server-with-scala.html)
 
 ## [Awesome MCP Servers](https://github.com/modelcontextprotocol/servers)
 
