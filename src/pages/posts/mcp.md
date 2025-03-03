@@ -164,7 +164,7 @@ AI应用可以两种方式接入MCP服务：
 - [confluence-mcp](https://github.com/zereight/confluence-mcp)
 - [mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)
 - [Brave Search MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search)
-
+- [awesome-mcp-servers](https://github.com/fujohnwang/awesome-mcp-servers)
 
 
 
