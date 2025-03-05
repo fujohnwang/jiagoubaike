@@ -165,7 +165,7 @@ AI应用可以两种方式接入MCP服务：
 - [mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)
 - [Brave Search MCP Server](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search)
 - [awesome-mcp-servers](https://github.com/fujohnwang/awesome-mcp-servers)
-
+- [mcp.composio.dev](https://mcp.composio.dev/) - 100+ MCP servers, 不过大多是连接到海外的APPs
 
 
 
