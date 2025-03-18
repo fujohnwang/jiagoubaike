@@ -95,6 +95,7 @@ AI应用可以两种方式接入MCP服务：
 - [MCP Server for Apache Airflow](https://github.com/yangkyeongmo/mcp-server-apache-airflow)
 - [Curri MCP Server](https://github.com/teamcurri/mcp-linear)
 - [Figma MCP Server](https://github.com/GLips/Figma-Context-MCP)
+- [cursor-talk-to-figma-mcp](https://github.com/sonnylazuardi/cursor-talk-to-figma-mcp)
 - [Scryfall MCP Server](https://github.com/cryppadotta/scryfall-mcp)
 - [EverArt Forge MCP Server](https://github.com/nickbaumann98/everart-forge-mcp)
 - [steam](https://github.com/dsp/mcp-server-steam)
