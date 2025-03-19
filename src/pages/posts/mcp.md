@@ -169,7 +169,7 @@ AI应用可以两种方式接入MCP服务：
 - [mcp.composio.dev](https://mcp.composio.dev/) - 100+ MCP servers, 不过大多是连接到海外的APPs
 - [blender-mcp](https://github.com/ahujasid/blender-mcp)
 - [mcp-playwright](https://github.com/executeautomation/mcp-playwright)
-
+- [Cloudflare MCP Server](https://github.com/cloudflare/mcp-server-cloudflare)
 
 
 
