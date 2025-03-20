@@ -170,6 +170,4 @@ AI应用可以两种方式接入MCP服务：
 - [blender-mcp](https://github.com/ahujasid/blender-mcp)
 - [mcp-playwright](https://github.com/executeautomation/mcp-playwright)
 - [Cloudflare MCP Server](https://github.com/cloudflare/mcp-server-cloudflare)
-
-
-
+- [https://mcp.so/](https://mcp.so/)
