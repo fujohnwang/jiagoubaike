@@ -53,6 +53,10 @@ const ogImgUrl = `https://og.afoo.me?url=${canonicalURL}`
         </div>
         <slot />
 
+        <div class="w-full max-w-screen-xl">
+          <div onclick="history.back()" class="mx-auto my-6 w-1/2 rounded border bg-blue-500 p-3 text-center text-white md:w-1/4 hover:cursor-pointer">返回(Go Back)</div>
+        </div>
+
         <section class="relative mx-auto w-full max-w-screen-xl p-6 mt-6 border-t">
             <div class="relative z-10 w-full">
               <div class="mx-auto max-w-screen-md">
@@ -68,10 +72,6 @@ const ogImgUrl = `https://og.afoo.me?url=${canonicalURL}`
             </div>
         </section>
 
-        
-        <div class="w-full max-w-screen-xl">
-          <div onclick="history.back()" class="mx-auto my-6 w-1/2 rounded border bg-blue-500 p-3 text-center text-white md:w-1/4 hover:cursor-pointer">返回(Go Back)</div>
-        </div>
       </main>
 
       <section class="overflow-x-clip bg-zinc-50 py-16 md:py-24">
