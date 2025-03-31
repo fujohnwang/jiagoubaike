@@ -172,7 +172,7 @@ AI应用可以两种方式接入MCP服务：
 - [Cloudflare MCP Server](https://github.com/cloudflare/mcp-server-cloudflare)
 - [https://mcp.so/](https://mcp.so/)
 - [官方playwright-mcp](https://github.com/microsoft/playwright-mcp)
-
+- [some remote mcp servers](https://mcpservers.org/hosting)
 
 
 
