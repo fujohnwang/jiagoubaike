@@ -173,6 +173,9 @@ AI应用可以两种方式接入MCP服务：
 - [https://mcp.so/](https://mcp.so/)
 - [官方playwright-mcp](https://github.com/microsoft/playwright-mcp)
 - [some remote mcp servers](https://mcpservers.org/hosting)
+- [gitmcp](https://gitmcp.io/)
+  - 将github repo通过mcp接入你的AI IDE作为context（比如code review，audit等）
+
 
 
 
