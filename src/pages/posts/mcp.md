@@ -177,5 +177,5 @@ AI应用可以两种方式接入MCP服务：
   - 将github repo通过mcp接入你的AI IDE作为context（比如code review，audit等）
 - [阿里云百炼MCP市场](https://bailian.console.aliyun.com/?tab=mcp#/mcp-market)
 - [MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP)
-
+- [https://www.mcpserver.info/](https://www.mcpserver.info/) - 聚合网站
 
