@@ -179,3 +179,5 @@ AI应用可以两种方式接入MCP服务：
 - [MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP)
 - [https://www.mcpserver.info/](https://www.mcpserver.info/) - 聚合网站
 - [https://github.com/metorial/mcp-containers](https://github.com/metorial/mcp-containers)
+- [XcodeBuildMCP](https://github.com/cameroncooke/XcodeBuildMCP)
+
