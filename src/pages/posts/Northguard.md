@@ -57,4 +57,8 @@ Xinfra 其实就是 X + Infrastructure 的缩写，它存在的目的其实就�
 
 暂时无论是 Northguard 还是 Xinfra 还都没有开源，只是Linkedin声称自己公司内部在用，所以，具体后续会怎么样我们还不清楚，让我们一起拭目以待吧！
 
+就这个话题，顺便分享一张企业培训中用到的PPT：
+
+![](./images/kafka-pulsar-northguard.jpg)
+
 
