@@ -180,4 +180,4 @@ AI应用可以两种方式接入MCP服务：
 - [https://www.mcpserver.info/](https://www.mcpserver.info/) - 聚合网站
 - [https://github.com/metorial/mcp-containers](https://github.com/metorial/mcp-containers)
 - [XcodeBuildMCP](https://github.com/cameroncooke/XcodeBuildMCP)
-
+- [https://github.com/googleapis/genai-toolbox](https://github.com/googleapis/genai-toolbox)
