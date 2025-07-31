@@ -15,7 +15,7 @@ Java Vector API 是Java16开始孵化的一个新特性（incubator features）�
 
 注意，是并行，不是并发 🤪
 
-如果说GPU是通过SIMT，即多核心多线程来提高并行处理能力，那么， SIMD就是通过一条指令同时处理多条数据来提高并行处理能力。
+如果说GPU是通过[SIMT](/posts/SIMT.html)，即多核心多线程来提高并行处理能力，那么， SIMD就是通过一条指令同时处理多条数据来提高并行处理能力。
 
 Java Vector API就是为了利用SIMD来提升自己的数据计算并行处理能力而生的。
 
