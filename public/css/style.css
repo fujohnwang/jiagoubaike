@@ -1,56 +1,253 @@
-
+/* Starlight Aside 样式 */
 .starlight-aside {
-	padding: 1rem;
-	border-inline-start: 0.25rem solid var(--sl-color-asides-border);
-	color: white;
-	font-style: italic;
-	border-left-style: solid;
-	border-left-color: rgb(46, 43, 43);
-	border-left-width: 1rem;
+    padding: 1rem;
+    border-inline-start: 0.25rem solid var(--sl-color-asides-border);
+    color: white;
+    font-style: italic;
+    border-left-style: solid;
+    border-left-color: rgb(46, 43, 43);
+    border-left-width: 1rem;
 }
-	
 
 .starlight-aside--note {
-	--sl-color-asides-text-accent: var(--sl-color-blue-high);
-	--sl-color-asides-border: var(--sl-color-blue);
-	background-color: yellowgreen;
+    --sl-color-asides-text-accent: var(--sl-color-blue-high);
+    --sl-color-asides-border: var(--sl-color-blue);
+    background-color: yellowgreen;
 }
 .starlight-aside--tip {
-	--sl-color-asides-text-accent: var(--sl-color-purple-high);
-	--sl-color-asides-border: var(--sl-color-purple);
-	background-color: #337cf2;
+    --sl-color-asides-text-accent: var(--sl-color-purple-high);
+    --sl-color-asides-border: var(--sl-color-purple);
+    background-color: #337cf2;
 }
 .starlight-aside--caution {
-	--sl-color-asides-text-accent: var(--sl-color-orange-high);
-	--sl-color-asides-border: var(--sl-color-orange);
-	background-color: orange;
+    --sl-color-asides-text-accent: var(--sl-color-orange-high);
+    --sl-color-asides-border: var(--sl-color-orange);
+    background-color: orange;
 }
 .starlight-aside--danger {
-	--sl-color-asides-text-accent: var(--sl-color-red-high);
-	--sl-color-asides-border: var(--sl-color-red);
-	background-color: red;
+    --sl-color-asides-text-accent: var(--sl-color-red-high);
+    --sl-color-asides-border: var(--sl-color-red);
+    background-color: red;
 }
 
 .starlight-aside__title {
-	display: flex;
-	gap: 0.5rem;
-	align-items: center;
-	font-size: var(--sl-text-h5);
-	font-weight: 600;
-	line-height: var(--sl-line-height-headings);
-	color: indigo;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: var(--sl-text-h5);
+    font-weight: 600;
+    line-height: var(--sl-line-height-headings);
+    color: indigo;
 }
 
 .starlight-aside__icon {
-	font-size: 1.333em;
-	width: 1em;
-	height: 1em;
+    font-size: 1.333em;
+    width: 1em;
+    height: 1em;
 }
 
 .starlight-aside__title + .starlight-aside__content {
-	margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .starlight-aside__content a {
-	color: blue;
+    color: blue;
+}
+
+/* 代码块样式改进 */
+pre {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 0.75rem !important;
+    padding: 1.25rem !important;
+    margin: 1.5rem 0 !important;
+    overflow-x: auto !important;
+    font-family:
+        "JetBrains Mono", "Fira Code", "SF Mono", Consolas, "Liberation Mono",
+        Menlo, Courier, monospace !important;
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+pre code {
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    color: #334155 !important;
+    font-weight: 400 !important;
+    font-size: inherit !important;
+}
+
+/* 内联代码样式 */
+code:not(pre code) {
+    background: #f1f5f9 !important;
+    color: #dc2626 !important;
+    padding: 0.125rem 0.375rem !important;
+    border-radius: 0.25rem !important;
+    font-size: 0.875em !important;
+    font-weight: 500 !important;
+    border: 1px solid #e2e8f0 !important;
+    font-family:
+        "JetBrains Mono", "Fira Code", "SF Mono", Consolas, "Liberation Mono",
+        Menlo, Courier, monospace !important;
+}
+
+/* 语法高亮样式 */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #6b7280 !important;
+    font-style: italic !important;
+}
+
+.token.keyword,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #dc2626 !important;
+    font-weight: 500 !important;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+    color: #059669 !important;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+    color: #d97706 !important;
+}
+
+.token.atrule,
+.token.attr-name,
+.token.class-name {
+    color: #7c3aed !important;
+}
+
+.token.function {
+    color: #2563eb !important;
+    font-weight: 500 !important;
+}
+
+.token.property,
+.token.selector {
+    color: #0891b2 !important;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+    pre {
+        background: #1e293b !important;
+        border-color: #334155 !important;
+    }
+
+    pre code {
+        color: #e2e8f0 !important;
+    }
+
+    code:not(pre code) {
+        background: #1e293b !important;
+        color: #f87171 !important;
+        border-color: #334155 !important;
+    }
+
+    .token.comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+        color: #9ca3af !important;
+    }
+
+    .token.keyword,
+    .token.tag,
+    .token.boolean,
+    .token.number,
+    .token.constant,
+    .token.symbol,
+    .token.deleted {
+        color: #f87171 !important;
+    }
+
+    .token.string,
+    .token.char,
+    .token.attr-value,
+    .token.regex,
+    .token.variable {
+        color: #34d399 !important;
+    }
+
+    .token.operator,
+    .token.entity,
+    .token.url {
+        color: #fbbf24 !important;
+    }
+
+    .token.atrule,
+    .token.attr-name,
+    .token.class-name {
+        color: #a78bfa !important;
+    }
+
+    .token.function {
+        color: #60a5fa !important;
+    }
+
+    .token.property,
+    .token.selector {
+        color: #22d3ee !important;
+    }
+}
+
+/* 滚动条样式 */
+pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+@media (prefers-color-scheme: dark) {
+    pre::-webkit-scrollbar-track {
+        background: #0f172a;
+    }
+
+    pre::-webkit-scrollbar-thumb {
+        background: #475569;
+    }
+
+    pre::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    pre {
+        margin: 1rem -1rem !important;
+        border-radius: 0 !important;
+        padding: 1rem !important;
+        font-size: 0.8rem !important;
+    }
 }
