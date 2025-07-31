@@ -61,7 +61,26 @@ const { title,description,canonicalURL } = Astro.props;
 	    }
 	  });
 	</script>
-
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('a[href]');
+        
+        links.forEach(link => {
+          try {
+            const url = new URL(link.href);
+            const hostname = url.hostname.toLowerCase();
+            
+            if (!hostname.endsWith('jiagoubaike.com')) {
+              link.setAttribute('target', '_blank');
+              link.setAttribute('rel', 'noopener noreferrer');
+            }
+          } catch (e) {
+            // 如果 href 不是有效 URL（例如相对路径），跳过
+            // console.error('Invalid URL:', link.href);
+          }
+        });
+      });
+    </script>
 </html>
 <style is:global>
 	::-webkit-scrollbar {
