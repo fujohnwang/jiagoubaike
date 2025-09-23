@@ -50,6 +50,8 @@ IVF的全称是Inverted File， 它的工作原理其实说起来也挺简单的
 
 这就出现了几个变种：
 
+![](./images/ivf-vars.jpg)
+
 1. IVF-PQ，PQ是向量压缩算法，IVF-PQ其实就是用PQ对inverted list里的全精度向量进行压缩，所以，自然降低了存储，同时适用近似度计算，速度效率也会提升；
 2. IVF-HNSW，HNSW也是一种向量索引，KVectors向量数据库有支持，IVF-HNSW就是在IVF的基础上，再对每个inverted list里的向量进行HNSW索引，从而在第二阶段的检索过程中进一步提升检索效率。对于极大数量量来说，这个方式很有效。inverted list很小的时候，则没有必要。
 
